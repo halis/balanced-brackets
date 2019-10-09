@@ -32,8 +32,6 @@ const areBracketsBalanced = string => {
   return true
 }
 
-console.log(areBracketsBalanced('[hi{there(what<the>hell)}]'))
-console.log(areBracketsBalanced('(x * 2] + 2'))
-console.log(areBracketsBalanced('((x * 2])) + 2'))
-console.log(areBracketsBalanced('))(('))
-console.log(areBracketsBalanced('((x + y) + 2)'))
+module.exports = {
+  areBracketsBalanced,
+}
